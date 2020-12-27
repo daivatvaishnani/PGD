@@ -1,0 +1,23 @@
+incubate a habit
+	after finishing a module, learn about advanced stuff in module
+	analyticsvidya, towardsdatascience, machinelearningmastery
+
+projects
+	kaggle/goggle datasets, explore gaming related datasets, rockstar games, pubg
+	download these and apply what you learned (different types of models)
+	nlp -> 	extract live data (tweets) from twitter, analysing it
+			Twitter developer API, tweepy, extract tweets containing Farmville, #Farmville, #Zynga, @Zynga
+			once data extracted, perform text cleaning
+			perform sentiment analysis, positive/negative/neutral
+			dig deeper into negative sentiment tweets
+			extract location, reasons, etc.
+	ml ->	start interacting with data analysts teams at Zynga
+	dl ->	take up a project on computer vision (opencv)
+			kaggle, covid masks build classifier using tensorflow
+			how game bots have been developed, how they're defeating human brains
+
+how do you learn concepts not covered in course?
+	scanning through kernels in kaggle
+	learn other data visualizing tools apart from matplotlib/seaborn like plotly
+
+follow top data scientists

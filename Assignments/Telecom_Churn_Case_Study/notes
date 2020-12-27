@@ -1,0 +1,24 @@
+1. Data Cleaning
+    1. Missing Data:
+        1. Identify the sets of categorical and continuous variables.
+        2. Find out percentage of nulls for various columns.
+        3. Indentify meaningful missing and impute with zero.
+            1. No of recharges, no of calls made, etc.
+        4. Drop columns with high missing percentage (aything more than 70-80%, there are 30 columns like this)
+        5. For less missing % variables, impute
+        6. Fancy compute
+
+2. Filter high value customers (80-20 rule, focus on top 20%)
+    1. We will build our model for high value customers
+    2. 90% revenue is there from 30% customers
+    3. We will only use 6th and 7th month data to filter
+    4. High value customers are people with high total recharge amount.
+
+3. Derive Churn (this column is not available)
+    1. User 9th month data
+    2. figure out by total incoming and outgoing minutes of usage
+    3. After deriving churn you can remove all the 9th month variables
+
+4. Do EDA
+
+5. Modelling

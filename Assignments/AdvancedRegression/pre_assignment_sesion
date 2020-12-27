@@ -1,0 +1,23 @@
+Missing with some meaning
+    Garage Quality, alley, etc.
+    Here null means there is no alley, no garage
+    so they are null but they still have some meaning
+    
+    Drop columns that don't have good information content
+        Lets say if 90% of data is falling to one category than that variable doesn't have much information
+        Here alley is such categorical variable, 90% houses have no alley, we can drop such columns
+
+Artificial Outliers
+    data entry issue
+    treat them as missing values
+Natural outliers
+    naturally occuring, salary of CEO
+    to treat them:
+        transform such columns, e.g. convert salary to log(salary)
+        scaling, min-max, standardize
+        
+Encoding categorical data
+    if we have binary variable, male-female, spam-ham then assign 0-1 (label encoding)
+    if we have ordinal data, small-medium-large-xl, then we cann do 1-2-3-4 (label encoding)
+    if we have nominal data, green-red-brown-black, then we cannot order it and we create dummies (one hot encoding)
+        in creating dummies, we use drop-first to avoid multi-collinearity because here one col can always be derived from others

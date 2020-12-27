@@ -1,0 +1,28 @@
+next_pymnt_d                  38577
+mths_since_last_record        36931
+mths_since_last_delinq        25682
+desc                          12940
+emp_title                      2459
+emp_length                     1075
+pub_rec_bankruptcies            697
+last_pymnt_d                     71
+chargeoff_within_12_mths         56
+collections_12_mths_ex_med       56
+revol_util                       50
+tax_liens                        39
+title                            11
+last_credit_pull_d                2
+
+
+Less than 10% missing values
+**emp_title** and **emp_length** <br>
+- Description provided by customer about his employment title and length <br>
+- **6% and 3% missing values respectively** <br>
+- These NaNs might be because no description was provided by customer. We cant really rely on this as there is no authenticity to the description that the customer provides. <br>
+- We will **keep these column** as it is for now as the number of missing values is less. <br>
+
+**pub_rec_bankruptcies** <br>
+- Number of publicly recorded bankrupcies <br>
+- **1% missing values** <br>
+- These NaNs might be because of no bankrupcy. This can be a prominent factor in determining the financial track-record of the customer <br>
+- We will **keep this column** as it is for now. <br>

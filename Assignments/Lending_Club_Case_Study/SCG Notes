@@ -1,0 +1,11 @@
+Removing imbalance in data (Read about over-sampling and under-sampling)
+    Positivity rate in Covid-19 is 4.5%
+        In dataset of 100 people, 5 people are positive and 95 people are negative
+        If we consider this dataset to develop a model on predicitng positivity
+             Even if we take a horrible model that always predicts negative then also we can get an accuracy of 0.95
+             We should try to remove this kind of imbalance while developing a model to avoid that
+    Generally, we have efficient infrastructures (AWS etc.) that generally we don't require to do modelling on samples
+
+
+Issues faced by peers
+    Doubts in the meanings of terms

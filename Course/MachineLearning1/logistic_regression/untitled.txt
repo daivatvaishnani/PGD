@@ -1,0 +1,22 @@
+    Age Cabin Embarked     Fare  ... PassengerId  Pclass  SibSp   Ticket
+0  34.5   NaN        Q   7.8292  ...         892       3      0   330911
+1  47.0   NaN        S   7.0000  ...         893       3      1   363272
+2  62.0   NaN        Q   9.6875  ...         894       2      0   240276
+3  27.0   NaN        S   8.6625  ...         895       3      0   315154
+4  22.0   NaN        S  12.2875  ...         896       3      1  3101298
+
+
+
+ Age Cabin Embarked     Fare                                          Name  \
+0  34.5   NaN        Q   7.8292                              Kelly, Mr. James   
+1  47.0   NaN        S   7.0000              Wilkes, Mrs. James (Ellen Needs)   
+2  62.0   NaN        Q   9.6875                     Myles, Mr. Thomas Francis   
+3  27.0   NaN        S   8.6625                              Wirz, Mr. Albert   
+4  22.0   NaN        S  12.2875  Hirvonen, Mrs. Alexander (Helga E Lindqvist)   
+
+   Parch  PassengerId  Pclass  SibSp   Ticket  
+0      0          892       3      0   330911  
+1      0          893       3      1   363272  
+2      0          894       2      0   240276  
+3      0          895       3      0   315154  
+4      1          896       3      1  3101298  

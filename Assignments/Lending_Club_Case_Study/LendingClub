@@ -1,0 +1,67 @@
+Risks in Giving Loans
+    Not granting the loan to customer who can repay (Non-defaulter) (risk of business loss)
+    Granting loan to customer who cannot repay (Defaulter) (risk of financial loss)
+    
+Task
+    Identify patterns that help determine wheather is customer is likely to default or not
+    Find top 10 variable that help in understanding the default rates
+    
+    
+Analysis
+    Univariate Analysis
+        Goal is to understand a particular variable/column.. see patterns, distributions
+        Unordered Categorical Variables
+            Power-law distribution
+                straight line in log-log scale
+                indicates preferential attachment... wealth creates more wealth, artist with good records gets more records
+                not sure what insight will it give in loan defauls... skipping for now
+        Ordered Categorical Variables
+            Ordered Categorical Histograms
+                Peaks indicating rounding-off meter readings
+                Peaks indicating laziness in recording meter readings
+                Peaks indicating grace marks to pass the students
+        Quantitative Variables
+            Transform to Ordered Categorical
+                Binning in various ranges and getting same insights as ordered categorical
+            Summary Metrics
+                Mean, median, std deviation, quartiles, outliers
+                
+    Segmented Univariate Analysis
+        How different Segments compare to each other (on categorical variables)
+            Create segments (groupby) on basis of categorical variables
+            Summarize on segments - compare mean, median, target variable etc. across segments
+            
+    Bivariate Analysis (analysing pairs of variables)
+        Does one variable influence another. Find out what influences what
+        Continuous Variables
+            variables that can add up, numbers basically
+            see if one rises, the other also rises (correlation)
+            
+        Categorical Variables
+            variables on which we can groupby/segment
+            groupby multiple aspects and see the impacts on the target variable
+            natural extention of segmented univariate for two variables
+            
+    Derived Metrics
+            
+Understanding of Columns
+    loan_amnt
+        amount requested by applicant
+    funded_amnt
+        amount suggested by lending club (lending club doesnt provide loan it just suggests, investors provide)
+        SME says not useful [???]
+    funded_amnt_inv
+        amount lended by investors (Final amount received)
+    emp_length
+        convert to text
+    
+    Types of Variables
+        Variables related to applicant
+            occupation, emp_length, zip_code, address, desc, etc. demographic
+        Variables related Loan characteristics
+            loan_amnt, interst rate, grade, sub-grade, etc.
+        Variables related Customer behaviour variables
+            delinquent 2 years, revolution, etc.
+            
+    A very important thing to notice is that the information related to Customer behaviour variables will not be available when the customer applies for the loan. This information will start gettting recorded depending to the customer behaviour after he has recieved the loan. However, we need to make our risk analysis when the customer applies for the loan. So, it is advised to not make use of these Customer behavious variables in predicting defaults as ideally they won't be available at the time of assesment.
+    
