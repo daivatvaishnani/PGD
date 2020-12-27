@@ -1,5 +1,3 @@
-Attribute 1 (a1),Attribute 2 (a2),True Class Label,Class Label as predicted by the decision tree,,,
-2,35,1,1,,,
-12,13,2,1,,,
--4,45,2,2,,,
-2,17,2,2,,,
+version https://git-lfs.github.com/spec/v1
+oid sha256:23034b284943cc112cf20465c089544255248b920d80403153046a9b4bbda673
+size 155
